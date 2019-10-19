@@ -14,7 +14,8 @@
 	],
 	"main": "./out/extension.js",
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run compile",
+    "lint": "eslint --ext .js,.ts .",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile",
@@ -25,10 +26,16 @@
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
 		"@types/vscode": "^1.39.0",
+		"@typescript-eslint/eslint-plugin": "^2.4.0",
+		"eslint": "^6.5.1",
+		"eslint-config-standard-with-typescript": "^10.0.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-node": "^9.2.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
 		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
 		"vscode-test": "^1.2.0"
 	}
 }
